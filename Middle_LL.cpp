@@ -13,16 +13,16 @@ class Solution {
 public:
     ListNode* middleNode(ListNode* head) {
         ListNode *temp=head;
-        int sex=0;
+        int c=0;
         while(temp)
         {
-            sex++;
+            c++;
             temp=temp->next;
         }
         temp=head;
-        if(sex%2!=0) sex=ceil(sex/2);
-        else sex=sex/2;
-        while(sex--)
+        if(c%2!=0) c=ceil(c/2);
+        else c=c/2;
+        while(c--)
         {
             temp=temp->next;
         }
