@@ -9,7 +9,6 @@
  */
  
  //DFS 
- 
 class Solution {
 public:
     int depth(TreeNode* root){
